@@ -127,6 +127,14 @@ api.on('update', (update) => {
                 chat_id: chat_id,
                 text: 'При поступлении в МГТУ им. Баумана учитываются: \n -всероссийские олимпиады;\n -олимпиада "Шаг в будущее";\n -"Технокубок";\n -"Газпром".\n Также учитываются призовые места в олимпиадах по профильным предметам.',
                 parse_mode: 'Markdown',
+                reply_markup: {
+                    inline_keyboard: [
+                        [{
+                            text: 'Список олимпиад',
+                            url: 'https://telegra.ph/Spisok-olimpiad-07-15'
+                        }]
+                    ]
+                }
 
             })
             break;
